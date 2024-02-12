@@ -21,8 +21,17 @@
  *  0  => true
  *  -5 => false
  */
-function isPositive(/* number */) {
-  throw new Error('Not implemented');
+
+function isPositive(number) {
+  let result;
+
+  if (number >= 0) {
+    result = true;
+  } else if (number < 0) {
+    result = false;
+  }
+
+  return result;
 }
 
 /**
